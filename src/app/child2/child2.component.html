@@ -1,0 +1,130 @@
+<!--<hr />
+<div class="myDiv">
+  <h1>PRODUCT DETAILS</h1>
+  <table align="center">
+    <tr>
+      <th>Product Id</th>
+      <th>Product Name</th>
+      <th>Product Price</th>-->
+<!--<th>Product Description</th>-->
+<!--<th>Product Image</th>
+</tr>
+<ng-container *ngFor='let products of cproduct'>
+  <tr *ngIf="products.productPrice>7000">
+    <td>
+      <b>
+        {{products.productID}}
+      </b>
+    </td>
+    <td>
+      <b>
+        {{products.productName}}
+      </b>
+    </td>
+    <td>
+      <b>
+        {{products.productPrice}}
+      </b>
+    </td>-->
+<!--<td>
+  <b>
+    {{products.productDescription}}
+  </b>
+</td>-->
+<!--<td>
+        <img [src]='products.productImage' class='image' />
+      </td>
+    </tr>
+  </ng-container>
+</table>
+
+</div>-->
+<!--<hr />
+<div class="myDiv">
+  <h1>PRODUCT DETAILS</h1>
+  <div appZoom>
+    <h3>Search : <input [(ngModel)]="searchText" placeholder="Search.." class="advancedSearchTextbox"></h3>
+    <label><b>Sort :</b></label>
+    <select [(ngModel)]='SortbyParam'>
+      <option value="productId">Procuct Id</option>
+      <option value="productName">Procuct Name</option>
+      <option value="productPrice">Procuct Price</option>
+      <option value="productDes">Procuct Description</option>
+    </select>
+  </div>
+  <br />
+  <table>
+    <ng-container *ngFor="let product of cproduct | grdFilter: {productName: searchText, productPrice:searchText}| sort:SortbyParam;">
+      <tr *ngIf="product.productPrice>40000 ">
+        <th>
+          Product Id
+        </th>
+        <th>
+          Product Name
+        </th>
+
+        <th>
+          Product Price
+        </th>
+
+        <th>
+          Product Description
+        </th>
+
+        <th>
+          Product Image
+        </th>
+      </tr>
+      <tr>
+        <td>{{product.productID}}</td>
+        <td>{{product.productName}}</td>
+        <td>{{product.productPrice}}</td>
+        <td>{{product.productDes}}</td>
+        <td>
+          <img [src]='product.productImage' class='image' />
+      </tr>
+    </ng-container>
+  </table>
+</div>-->
+
+<hr />
+<div class="myDiv">
+  <h1>PRODUCT DETAILS</h1>
+  <table align="center">
+    <tr>
+      <th>Product Id</th>
+      <th>Product Name</th>
+      <th>Product Price</th>
+      <!--<th>Product Description</th>-->
+      <th>Product Image</th>
+    </tr>
+    <ng-container *ngFor='let products of cproduct'>
+      <tr *ngIf="products.productPrice>2000">
+        <td>
+          <b>
+            {{products.productID}}
+          </b>
+        </td>
+        <td>
+          <b>
+            {{products.productName}}
+          </b>
+        </td>
+        <td>
+          <b>
+            {{products.productPrice}}
+          </b>
+        </td>
+        <!--<td>
+          <b>
+            {{products.productDescription}}
+          </b>
+        </td>-->
+        <td>
+          <img [src]='products.productImage' class='image' />
+        </td>
+      </tr>
+    </ng-container>
+  </table>
+
+</div>

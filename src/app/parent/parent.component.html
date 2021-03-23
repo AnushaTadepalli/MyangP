@@ -1,0 +1,16 @@
+<!--<div>
+ <h1>ParentComponent</h1>
+<app-child [cproduct]="pproduct"></app-child>
+</div>-->
+
+<!--<div>
+  <h1>ParentComponent - {{pproduct.ProductId}} -{{pproduct.ProductName}}</h1>
+  <h2> {{parentData}}</h2>
+  <app-child [cproduct]="pproduct" (notify)='getDataFromChild($event)'></app-child>
+</div>-->
+
+<div>
+  <h1>ParentComponent - {{pcustomer.name}} -{{pcustomer.age}}</h1>
+  <h2> {{parentData}}</h2>
+  <app-child [ccustomer]="pcustomer" (notify)='getDataFromChild($event)'></app-child>
+</div>

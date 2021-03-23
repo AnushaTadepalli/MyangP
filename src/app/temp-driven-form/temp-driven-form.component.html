@@ -1,0 +1,119 @@
+<!--<p>temp-driven-form works!</p>-->
+<app-header></app-header>
+<body>
+  <!--<div class='container'>-->
+  <div class="col-lg-6">
+    <form #userForm='ngForm' (ngSubmit)='submitData(userForm.value)'>
+      <div class='form-group'>
+        <h1>TEMP DRIVEN FORM</h1>
+
+        <label>Name:</label>
+        <input type='text' class='form-control' name='name' #nameRef='ngModel'
+               ngModel required minlength='5' maxlength='12' pattern='[a-z]+'>
+
+        <div *ngIf='nameRef.errors && (nameRef.dirty || nameRef.touched)' class='alert alert-danger'>
+          <div [hidden]='!nameRef.errors.required'>Please enter Name</div>
+          <div [hidden]='!nameRef.errors.minlength'>Please enter atleast 5 characters</div>
+          <div [hidden]='!nameRef.errors.pattern'>Please enter valid name</div>
+        </div>
+
+        <label>Gender:</label>
+        <div class="custom-control custom-radio">
+          <input id="male" type="radio" class="custom-control-input" value="male" name="gender" ngModel>
+          <label class="custom-control-label" for="male">Male</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input id="female" type="radio" class="custom-control-input" value="female" name="gender" ngModel>
+          <label class="custom-control-label" for="female">Female</label>
+        </div>
+
+
+        <div class='form-group'>
+          <label>Email:</label>
+          <input required #email="ngModel" type='email' ngModel class='form-control' name='useremail' #emailRef='ngModel' />
+          <!--<span *ngIf="email.invalid && email.touched" class='error'>Email field is required</span>-->
+          <div *ngIf='emailRef.errors && (emailRef.dirty || emailRef.touched)' class='alert alert-danger'>
+            <div [hidden]='!emailRef.errors.required'>Please enter Email</div>
+            <div [hidden]='!emailRef.errors.pattern'>Please enter atleast 5 characters</div>
+          </div>
+        </div>
+
+        <div class='form-group'>
+          <label>Password:</label>
+          <input required #pass="ngModel" type='password' ngModel class='form-control' name='password' #passRef='ngModel' /><!--placeholder="Password"-->
+          <!--<span *ngIf="pass.invalid && pass.touched" class="error">Password field is required</span>
+          </div>-->
+          <div *ngIf='passRef.errors && (passRef.dirty || passRef.touched)' class='alert alert-danger'>
+            <div [hidden]='!passRef.errors.pattern'>Please enter atleast 5 characters</div>
+            <div [hidden]='!passRef.errors.required'>Please enter Password</div>
+          </div>
+        </div>
+      </div>
+
+      <div ngModelGroup='Address'>
+        <div class='form-group'>
+          <label>City:</label>
+          <!--<input type='text' class='form-control' address='city' />-->
+          <input required #city="ngModel" type='text' ngModel class='form-control' name='userCity' #cityRef='ngModel' />
+          <!--<span *ngIf="city.invalid && city.touched" class="error">City field is required</span>
+          </div>-->
+          <div *ngIf='cityRef.errors && (cityRef.dirty || cityRef.touched)' class='alert alert-danger'>
+            <div [hidden]='!cityRef.errors.required'>Please enter City</div>
+          </div>
+        </div>
+
+
+        <div class='form-group'>
+          <label>State:</label>
+          <!--<input type='text' class='form-control' address='state' />-->
+          <input required #state="ngModel" type='text' ngModel class='form-control' name='userState' #stateRef='ngModel' />
+          <!--<span *ngIf="state.invalid && state.touched" class="error">State field is required</span>
+          </div>-->
+          <div *ngIf='stateRef.errors && (stateRef.dirty || stateRef.touched)' class='alert alert-danger'>
+            <div [hidden]='!stateRef.errors.required'>Please enter State</div>
+          </div>
+        </div>
+
+
+        <div class='form-group'>
+          <label>Postal Code:</label>
+          <!--<input type='text' class='form-control' address='postal-address' />-->
+          <input required #PC="ngModel" type='text' ngModel class='form-control' name='userPC' #PCRef='ngModel' />
+          <!--<span *ngIf="PC.invalid && PC.touched" class="error">PC field is required</span>
+          </div>-->
+          <div *ngIf='PCRef.errors && (PCRef.dirty || PCRef.touched)' class='alert alert-danger'>
+            <div [hidden]='!PCRef.errors.required'>Please enter Postal Code</div>
+          </div>
+        </div>
+
+        <!--<button [disabled]='!userForm.form.valid' type='submit' class='btn btn-success'>Submit</button>-->
+        <button type='submit' class="btn btn-success">Subtmit</button>
+      </div>
+    </form>
+  </div>
+</body>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <table >
+
+    <!--<tr>
+    <th>Name</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Postal Code</th>
+    </tr>-->
+    <tr *ngFor="let m of myData">
+      <td><b>Name: </b><br />{{m.name}}</td>
+      <td><b>Gender:</b><br />{{m.gender}}</td>
+      <td><b>Email: </b><br />{{m.useremail}}</td>
+      <td><b>Password: </b><br />{{m.password}}</td>
+      <td><b>City: </b><br />{{m.Address.userCity}}</td>
+      <td><b>State:</b><br />{{m.Address.userState}}</td>
+      <td><b>PC: </b><br />{{m.Address.userPC}}</td>
+    </tr>
+  </table>
+  <app-footer></app-footer>
+  <!--</div>-->

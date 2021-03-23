@@ -1,0 +1,25 @@
+<ul>
+  <!--<li><a routerLink='login' routerLinkActive='active'> <b>LOGIN</b></a></li>-->
+  <li><a routerLink='/home1' routerLinkActive='active'> <b>{{'HOME'|translate}}</b></a></li>
+  <li><a routerLink='/reviews' routerLinkActive='active'> <b>{{'REVIEWS'|translate}}</b></a></li>
+  <li><a routerLink='/tech' routerLinkActive='active'> <b>{{'TECHNOLOGIES'|translate }}</b></a></li>
+  <li><a routerLink='/temp-driven-form' routerLinkActive='active'> <b>{{'TD-REGISTRATION'|translate}}</b></a></li>
+  <li><a routerLink='/model-driven' routerLinkActive='active'><b>{{'MD-REGISTRATION'|translate}}</b></a></li>
+  <!--<li><a routerLink='/end' routerLinkActive='active'> <b>{{'LOG OUT'|translate}}</b></a></li>-->
+<li><a routerLink='/login' routerLinkActive='active'><b>{{'LOG OUT'|translate}}</b></a></li>
+
+
+  <!--</ul>-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <select name="wgtmsr" id="wgtmsr" #locale (change)='changeLocale(locale.value)'>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <option value='en'>English</option>
+    <option value='hin'>Hindi</option>
+    <option value='tel'>Telugu</option>
+  </select>
+</ul>
+ <router-outlet></router-outlet>
+<!--<footer>&copy; Copyright 2021, all rights reserved</footer>-->

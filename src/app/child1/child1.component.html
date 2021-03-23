@@ -1,0 +1,61 @@
+<div class="childDiv">
+  <h1>Child Amount --{{cAmount}}</h1>
+  <div class="button">
+    <button (click)='incrementAmount()' (click)='passAmountFromChild()'>Increment</button>
+    <button (click)='decrementAmount()' (click)='passAmountFromChild()'>Decrement</button>
+  </div>
+  </div>
+  <!--<h1>PRODUCT DETAILS</h1>
+  <div class="myDiv">
+    <div appZoom>-->
+      <!--<input type="text" class="form-control" id="search-text" aria-describedby="search-text"
+       [(ngModel)]="searchText" placeholder="Enter text to search"
+       autofocus>
+      <h3>Search : <input [(ngModel)]="searchText" placeholder="Search.." class="advancedSearchTextbox"></h3>
+      <label><b>Sort :</b></label>
+      <select [(ngModel)]='SortbyParam'>
+        <option value="productId">Procuct Id</option>
+        <option value="productName">Procuct Name</option>
+        <option value="productPrice">Procuct Price</option>
+        <option value="productDes">Procuct Description</option>
+      </select>
+    </div>
+    <br />
+    <p></p>
+    <table *ngFor="let product of products | grdFilter: {productName: searchText, productPrice:searchText}| sort:SortbyParam;">
+      <ng-container *ngIf="product.productPrice >= c_price">
+        <tr>
+          <th>
+            Product Id
+          </th>
+          <th>
+            Product Name
+          </th>
+
+          <th>
+            Product Price
+          </th>
+
+          <th>
+            Product Description
+          </th>
+
+          <th>
+            Product Image
+          </th>
+        </tr>
+        <tr>
+          <td>{{product.productID}}</td>
+          <td>{{product.productName}}</td>
+          <td>{{product.productPrice}}</td>
+          <td>{{product.productDes}}</td>
+          <td>
+            <img [src]='product.productImage' class='image' />
+        </tr>
+    </table>
+  </div>
+</div>-->-->
+
+
+
+

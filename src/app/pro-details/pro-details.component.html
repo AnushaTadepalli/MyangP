@@ -1,0 +1,51 @@
+<body>
+  <div class='container'>
+    <h1>PRODUCT DETAILS</h1>
+    <div appZoom>
+      <div class="myDiv">
+        <b>SEARCH :</b><input [(ngModel)]="searchText" class="advancedSearchTextbox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <b>SORT : </b>
+        <select [(ngModel)]='SortbyParam'>
+          <option value="productID">Procuct Id</option>
+          <option value="productName">Procuct Name</option>
+          <option value="productPrice">Procuct Price</option>
+          <option value="productDes">Procuct Description</option>
+        </select>
+      </div>
+    </div>
+    <br />
+    <!--<table *ngFor="let product of products | grdFilter: {productName: searchText, productPrice:searchText}| sort:SortbyParam;">-->
+    <table align="left">
+      <tr>
+        <th> Product Id</th>
+        <th>Product Name</th>
+        <th>Product Price</th>
+        <th>Product Description</th>
+        <th>Product Image</th>
+      </tr>
+      <tr *ngFor="let product of products | grdFilter: {productName: searchText, productPrice:searchText} | sort:SortbyParam;">
+        <td>{{product.productID}}</td>
+        <td>{{product.productName}}</td>
+        <td>{{product.productPrice}}</td>
+        <td>{{product.productDes}}</td>
+        <td>
+          <img [src]='product.productImage' class='image' />
+      </tr>
+      <!--$('.search').on('keyup', function(event) { // Fired on 'keyup' event
+
+      if($('.list').children().length === 0) { // Checking if list is empty
+
+      $('.not-found').css('display', 'block'); // Display the Not Found message
+
+      } else {
+
+      $('.not-found').css('display', 'none'); // Hide the Not Found message
+
+      }
+      });-->
+    </table>
+    </div>
+</body>
+      

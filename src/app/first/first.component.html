@@ -1,0 +1,116 @@
+ <!--<html>
+<head>
+</head>
+<body>
+  <section>-->
+    <!--for demo wrap-->
+    <!--<h1>Product Details</h1>-->
+    <!--<table>
+    <tr>
+      <td>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search..." [(ngModel)]="searchedKeyword">
+        </div>
+        <br />
+      </td>
+      <td>
+        <label>Sort : </label>
+        <select [(ngModel)]='SortbyParam'>
+          <option value="proId">Procuct Id</option>
+          <option value="proName">Procuct Name</option>
+          <option value="proPrice">Procuct Price</option>
+          <option value="proDescription">Procuct Description</option>
+        </select>
+      </td>
+    </tr>
+  </table>-->
+    <!--<div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0">
+
+
+      <thead>
+        <tr appSecondDir>
+          <th>Product Id</th>
+          <th>Product Name</th>
+          <th>Product Price</th>
+          <th>Product Description</th>-->
+    <!--<th>Product Image</th>-->
+    <!--</tr>
+        </thead>
+      </table>
+    </div>
+    <div class="tbl-content">
+      <table cellpadding="0" cellspacing="0" border="0">
+
+
+        <tr *ngFor="let product of myData ">
+          <td>
+            {{product.productID}}
+          </td>
+          <td>
+            {{product.productName}}
+          </td>
+          <td>
+            {{product.productPrice}}
+          </td>
+          <td>
+            {{product.productDescription}}
+          </td>
+          <td>
+            <img [src]='products.productImage' class='image' />
+          </td>
+        </tr>
+      </table>
+
+
+    </div>
+  </section>-->
+    <!--<div class="div2" *ngIf="!products.length">
+    <h1 align="center">Product is out of stock</h1>
+  </div>-->
+    <!-- follow me template -->
+    <!--</body>
+  </html>-->
+
+    <hr />
+    <div class="myDiv">
+      <h1>PRODUCT DETAILS</h1>
+      <table align="center">
+        <tr>
+          <th>Product Id</th>
+          <th>Product Name</th>
+          <th>Product Price</th>
+          <!--<th>Product Description</th>-->
+          <th>Product Image</th>
+        </tr>
+        <ng-container *ngFor='let products of myData'>
+          <!--<tr *ngIf="products.productPrice>7000">-->
+          <tr>
+            <td>
+              <b>
+                {{products.productID}}
+              </b>
+            </td>
+            <td>
+              <b>
+                {{products.productName}}
+              </b>
+            </td>
+            <td>
+              <b>
+                {{products.productPrice}}
+              </b>
+            </td>
+            <!--<td>
+            <b>
+              {{products.productDescription}}
+            </b>
+          </td>-->
+            <td>
+              <img [src]='products.productImage' class='image' />
+            </td>
+          </tr>
+        </ng-container>
+      </table>
+
+    </div>

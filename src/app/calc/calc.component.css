@@ -1,0 +1,96 @@
+h1 {
+  padding: 5px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}/*
+h3 {*/
+ /* padding: 5px;
+  background-color:lightcoral;
+  color: white;*/
+  
+/*}*/
+
+th {
+  padding: 20px;
+  /*background-color: #80ccff;*/
+  /* color: white;*/
+  border-collapse: collapse;
+  border-style: solid;
+  border-color: grey;
+}
+
+table, tr {
+  padding: 20px;
+  border-collapse: collapse;
+  border-style: solid;
+  border-color: grey;
+  background-color: white;
+}
+
+/*.center {
+  margin: 0;
+  position:absolute;
+  top: 75%;
+  left: 20%;
+  -ms-transform: translate(-70%, -150%);
+  transform: translate(-90%, -70%);
+}*/
+.myDiv {
+  background-color:aquamarine;
+}
+.div {
+   text-align: center;
+  padding: 10px;
+  float: left;
+   
+  font-size: 22px;
+  cursor: pointer;
+  display: inline-block;
+  display: block;
+  width: 50px;
+}
+
+/*.flex-parent {
+  display: flex;
+}*/
+
+/*.jc-center {
+  justify-content: center;
+  padding:20px;*/
+  /*background-color: #4CAF50;*/ /* Green */
+  /*border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;*/
+/*}*/
+
+.button {
+  background-color: #4CAF50; /* Green */
+  /*border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;*/
+  /*display: inline-block;*/
+  /*margin: 4px 2px;
+  cursor: pointer;*/
+  /*background-color: #4CAF50;*/ /* Green */
+  /*border: none;*/
+  color: white;
+  font-size: 80px;
+  padding:20px;
+  text-align: center;
+  
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+}
+
+ 
+

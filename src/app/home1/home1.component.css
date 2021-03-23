@@ -1,0 +1,77 @@
+/*mydiv {*/
+  /*background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;*/
+/*}*/
+/*.myimage {
+  float: left;
+  width: 100px;
+  height: 150px;
+  margin: 5px;
+}*/
+/*body {
+  background-image: url('C:\Users\lakshmianushat\OneDrive - ValueMomentum Inc\Documents\AngularProjects\MyangP\src\assets\now.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}*/
+
+/*div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}*/
+
+
+
+.myimage {
+  float: left;
+  width: 100px;
+  height: 850px;
+  margin: 5px;
+}
+.box {
+  text-align:justify;
+  text-justify: inter-word;
+  background-color: cornsilk;
+  width: 500px;
+  border: 5px solid black;
+  padding: 50px;
+  margin: 10px;
+  right: 0;
+}
+
+body {
+  background-image: url('C:\Users\lakshmianushat\OneDrive - ValueMomentum Inc\Documents\AngularProjects\MyangP\src\assets\now.jpg');
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-size: cover;
+  margin: auto 5px;
+  width: auto;
+  height: 650px;
+}
+
+/*h1 {
+  text-align: center;
+}*/
+/*.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+*/
+.child {
+  width: 50px;
+  height: 50px;
+ /* background-color: red;*/
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  margin: -25px 0 0 -25px; /* apply negative top and left margins to truly center the element */
+}

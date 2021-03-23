@@ -1,0 +1,55 @@
+<hr/>
+<div class="myDiv">
+  <h1>CALCULATOR</h1>
+  <table align="center">
+    <tr>
+      <th>
+        <div appZoom><h3>First Number  : <input type='number' #firstno /></h3></div>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <div appZoom><h3>Second Number : <input type='number' #secondno /></h3></div>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <div appZoom><h3>Result : {{result}}</h3></div>
+      </th>
+    </tr>
+  </table>
+
+  <!--<div appDcalc>-->
+  <div class="button">
+    <div appZoom>
+      <button (click)="add(firstno.value,secondno.value)">add</button>
+      <button (click)="sub(firstno.value,secondno.value)">sub</button>
+      <button (click)="mul(firstno.value,secondno.value)">mul</button>
+      <button (click)="div(firstno.value,secondno.value)">div</button>
+    </div>
+    <!--</div>-->
+    <!--<div class="div">
+      <button (click)="add(firstno.value,secondno.value)">Add</button>
+    </div>-->
+    <!--</div>
+
+    <div appDcalc>
+      <div class="div">
+        <button (click)="sub(firstno.value,secondno.value)">Sub</button>
+      </div>
+    </div>
+
+    <div appDcalc>
+      <div class="div">
+        <button (click)="mul(firstno.value,secondno.value)">Mul</button>
+      </div>
+    </div>
+
+    <div appDcalc>
+      <div class="div">
+        <button (click)="div(firstno.value,secondno.value)">Div</button>
+      </div>
+    </div>-->
+  </div>
+ </div>
+  <hr/>

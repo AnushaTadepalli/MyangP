@@ -1,0 +1,39 @@
+[
+  {
+    "id": 101,
+    "name": "Allu Arjun",
+    "desig": "Engineer",
+    "salary": 50000,
+    "Img": "../assets/allu.jpg"
+  },
+  {
+    "id": 102,
+    "name": "Nagarjuna",
+    "desig": "Teacher",
+    "salary": 30000,
+    "Img": "../assets/nag.jpg"
+  },
+  {
+    "id": 103,
+    "name": "Naveen",
+    "desig": "Actor",
+    "salary": 70000,
+    "Img": "../assets/naveen.jpg"
+  },
+
+  {
+    "id": 104,
+    "name": "NTR",
+    "desig": "Doctor",
+    "salary": 20000,
+    "Img": "../assets/ntr.jpg"
+  },
+
+  {
+    "id": 105,
+    "name": "Vijay",
+    "desig": "Sales Executive",
+    "salary": 60000,
+    "Img": "../assets/vijay.jpg"
+  }
+]

@@ -1,0 +1,53 @@
+/*nav {
+  border: 1px;
+  background-color: aquamarine;
+  color: black;
+  padding: 6px;
+}*/
+
+body {
+  background-image: url('C:\Users\lakshmianushat\OneDrive - ValueMomentum Inc\Documents\AngularProjects\MyangP\src\assets\blue2.jpg');
+  background-size: cover;
+  text-align: center;
+  margin: auto 5px;
+  width: auto;
+  height: 600px;
+  background-color: burlywood;
+}
+
+.image {
+  height: 50px;
+  width: 70px;
+}
+
+h1 {
+  padding: 2px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+th {
+  padding: 20px;
+  /*background-color: #80ccff;*/
+  /* color: white;*/
+  border-collapse: collapse;
+  border-style: solid;
+  border-color: black;
+  background-color:deepskyblue;
+}
+
+table, td, tr {
+  padding: 20px;
+  border-collapse: collapse;
+  border-style: solid;
+  border-color:black;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+  table.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+

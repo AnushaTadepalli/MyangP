@@ -1,0 +1,46 @@
+<hr />
+<div class="myDiv">
+  <!--<div *ngIf="product.length">-->
+    <h1>PRODUCT DETAILS</h1>
+    <table align="center">
+      <tr>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Product Price</th>
+        <th>Product Description</th>
+        <th>Product Image</th>
+      </tr>
+      <tr *ngFor='let products of product'>
+        <td>
+          <b>
+            {{products.productID}}
+          </b>
+        </td>
+        <td>
+          <b>
+            {{products.productName}}
+          </b>
+        </td>
+        <td>
+          <b>
+            {{products.productPrice}}
+          </b>
+        </td>
+        <td>
+          <b>
+            {{products.productDescription}}
+          </b>
+        </td>
+        <td>
+          <img [src]='products.productImage' class='image' />
+        </td>
+      </tr>
+    </table>
+
+  </div>
+  <!--<div *ngIf="!product.length">
+    <h1>Products not available.....</h1>
+  </div>-->
+<!--</div>-->
+
+ 

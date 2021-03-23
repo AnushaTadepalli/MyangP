@@ -1,0 +1,52 @@
+.image {
+  height: 80px;
+  width: 90px;
+}
+
+h1 {
+  padding: 5px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+th {
+  padding: 20px;
+  background-color: #80ccff;
+   color: white;
+  border-collapse: collapse;
+  border-style: solid;
+  border-color: grey;
+}
+
+table, td, tr {
+  padding: 20px;
+  border-collapse: collapse;
+  border-style: solid;
+  border-color: grey;
+  background-color: white;
+}
+
+.myDiv {
+  background-color: burlywood;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  /*border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;*/
+  /*display: inline-block;*/
+  /*margin: 4px 2px;
+  cursor: pointer;*/
+  /*background-color: #4CAF50;*/ /* Green */
+  /*border: none;*/
+  color: white;
+  font-size: 80px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+}

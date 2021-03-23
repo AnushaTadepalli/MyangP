@@ -1,0 +1,32 @@
+.image {
+  height: 80px;
+  width: 90px;
+}
+
+h1 {
+  padding: 5px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+th {
+  padding: 20px;
+ /*background-color: #80ccff;*/
+ /* color: white;*/
+  border-collapse: collapse;
+  border-style: solid;
+  border-color: grey;
+}
+
+table, td, tr {
+  padding: 20px;
+  border-collapse: collapse;
+  border-style: solid;
+  border-color: grey;
+  background-color: white;
+}
+
+.myDiv {
+  background-color:burlywood;
+}

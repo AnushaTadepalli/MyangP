@@ -1,0 +1,36 @@
+<!--<p>web works!</p>-->
+<!--<nav>
+  <a [routerLink]='["javascript"]' routerLinkActive='active'>Javascript</a> |
+  <a [routerLink]='["angular"]' routerLinkActive='active'>Angular</a>
+
+</nav>
+<router-outlet></router-outlet>-->
+<!--<app-header></app-header>-->
+<body>
+  <!--<div class="myDiv">-->
+  <div class='container'>
+    <!--<div *ngIf="product.length">-->
+    <h1>WEB COURSES</h1>
+    <table class="center" align="center">
+      <tr>
+        <th>Course Id</th>
+        <th>Course Name</th>
+        <th>Course Price</th>
+        <th>Course Description</th>
+        <th>Trainer</th>
+
+      </tr>
+      <tr *ngFor='let products of webData'>
+        <td>{{products.courseID}}</td>
+        <td>{{products.courseName}}</td>
+        <td>{{products.coursePrice |currency}}</td>
+        <td>{{products.courseDes}}</td>
+        <td>
+          <img [src]='products.productImage' class='image' />
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+<!--<app-footer></app-footer>-->

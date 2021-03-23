@@ -1,0 +1,45 @@
+<hr />
+<div class="myDiv">
+  <div appZoom>
+    <h1>PRODUCT DETAILS</h1>
+  </div>
+  <div appZoom>
+    <h3>Search : <input [(ngModel)]="searchText" placeholder="Search.." class="advancedSearchTextbox"></h3>
+  </div>
+  <p></p>
+  <table *ngFor="let products of productData | grdFilter: {productName:searchText,  productPrice: searchText};">
+      <tr>
+        <th>
+          Product Id
+        </th>
+   <th>
+    Product Name
+  </th>
+
+  <th>
+    Product Price
+  </th>
+
+  <th>
+    Product Image
+  </th>
+
+  <th>
+    Product ExpDate
+  </th>
+  </tr>
+  <tr>
+   <td>{{products.productID}}</td>
+    <td>{{products.productName}}</td>
+    <td>  {{products.productPrice}}</td>
+    <td>
+      <img [src]='products.productImage' class='image' />
+    </td>
+    <td>
+      {{products.productDate | date:"MM/dd/yy"}}
+    </td>
+  </tr>
+</table>
+ </div>
+
+

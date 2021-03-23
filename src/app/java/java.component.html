@@ -1,0 +1,37 @@
+<!--<p>java works!</p>-->
+<!--<nav>
+  <a [routerLink]='["coreJava"]' routerLinkActive='active'>CoreJava</a> |
+  <a [routerLink]='["advJava"]' routerLinkActive='active'>AdvJava</a>
+
+</nav>
+<router-outlet></router-outlet>-->
+<!--<app-header></app-header>-->
+<body>
+  <div class='container'>
+    <!--<div *ngIf="product.length">-->
+    <h1>JAVA COURSES</h1>
+    <table class="center" align="center">
+      <tr>
+        <th>Course Id</th>
+        <th>Course Name</th>
+        <th>Course Price</th>
+        <th>Course Description</th>
+        <th>Trainer</th>
+      </tr>
+      <tr *ngFor='let products of courseData'>
+        <td>{{products.courseID}}</td>
+        <td>{{products.courseName}}</td>
+        <td>{{products.coursePrice |currency}}</td>
+        <td>{{products.courseDes}}</td>
+        <td>
+          <img [src]='products.productImage' class='image' />
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+<!--<app-footer></app-footer>-->
+<!--<div *ngIf="!product.length">
+  <h1>Products not available.....</h1>
+</div>-->
+<!--</div>-->

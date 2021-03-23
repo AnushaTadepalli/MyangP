@@ -1,0 +1,60 @@
+<body>
+  <div class='container'>
+    <h1>EMPLOYEE DETAILS</h1>
+    <div appZoom>
+      <div class="myDiv">
+        <b>SEARCH :</b><input [(ngModel)]="searchText" class="advancedSearchTextbox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <b>SORT : </b>
+        <select [(ngModel)]='SortbyParam'>
+          <option value="id">Employee Id</option>
+          <option value="name">Employee Name</option>
+          <option value="desig">Employee Designation</option>
+          <option value="salary">Employee Salary</option>
+        </select>
+      </div>
+    </div>
+    <br />
+    <table align="left">
+      <tr>
+        <th>Employee Id</th>
+        <th>Employee Name</th>
+        <th>Employee Designation</th>
+        <th>Employee Salary</th>
+        <th>Employee Image</th>
+
+      </tr>
+      <tr *ngFor="let employee of employees | grdFilter: {id: searchText, name:searchText, desig:searchText, salary:searchText}| sort:SortbyParam;">
+        <td>
+          <b>
+            {{employee.id}}
+          </b>
+        </td>
+        <td>
+          <b>
+            {{employee.name}}
+          </b>
+        </td>
+        <!--<td>
+          <b>
+            {{employee.email}}
+          </b>
+        </td>-->
+        <td>
+          <b>
+            {{employee.desig}}
+          </b>
+        </td>
+        <td>
+          <b>
+            {{employee.salary}}
+          </b>
+        </td>
+        <td>
+          <img [src]='employee.Img' class='image' />
+        </td>
+      </tr>
+    </table>
+    </div>
+</body>
